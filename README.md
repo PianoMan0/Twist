@@ -1,2 +1,2 @@
 # Twist
-A YSWS about ✨silly✨ programming languages
+A YSWS about esoteric programming languages
