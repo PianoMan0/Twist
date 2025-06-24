@@ -2,17 +2,21 @@ body {
   background-image: url("https://hc-cdn.hel1.your-objectstorage.com/s/v3/491756a4cad19cf7d725292411ca55ffdd15593a_twist___1___1_.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 img {
-  width: 600px;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .start {
   background-color: #41c0eb;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 27px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -54,4 +58,43 @@ a.ysws {
   border-radius: 25px;
   cursor: pointer;
   transition: transform 0.3s
+}
+
+.start, #audio-toggle button {
+  padding: 16px 8vw;
+  font-size: 5vw;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 25px;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#audio-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 6vw;
+  }
+  .start, #audio-toggle button {
+    font-size: 6vw;
+    padding: 12px 4vw;
+  }
+  #audio-toggle {
+    top: 5px;
+    right: 5px;
+  }
+  body {
+    background-position: center;
+  }
 }
