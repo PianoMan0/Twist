@@ -1,18 +1,18 @@
-  const audio = document.getElementById('themeMusic');
-  const button = document.getElementById('audioButton');
+const audio = document.getElementById('themeMusic');
+const button = document.getElementById('audioButton');
 
-  button.addEventListener('click', () => {
-    if (audio.paused) {
-      audio.play();
-      button.textContent = 'Pause';
-    } else {
-      audio.pause();
-      button.textContent = 'Play';
-    }
-  });
+button.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    button.textContent = 'Pause';
+  } else {
+    audio.pause();
+    button.textContent = 'Play';
+  }
+});
 
-  audio.onerror = function() {
-    console.error("Audio file failed to load.");
-    button.disabled = true;
-    button.textContent = "Audio Error";
-  };
+audio.onerror = function() {
+  console.error("Audio file failed to load.");
+  button.disabled = true;
+  button.textContent = "Audio Error";
+};
