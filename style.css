@@ -1,3 +1,7 @@
+@view-transition {
+  navigation: auto;
+}
+
 * {
   box-sizing: border-box;
 
@@ -33,6 +37,10 @@ header, footer {
 
   flex-direction: row;
   justify-content: start;
+}
+
+footer {
+  border-top: dotted white 1pt;
 }
 
 .top-bar {
@@ -78,7 +86,7 @@ main {
 }
 
 section {
-  padding-top: 8vh;
+  padding-top: 3vh;
 }
 
 .hero {
@@ -116,12 +124,13 @@ button:hover {
 .large-button {
   font-size: 1.5rem;
   padding: 0.8rem 1.2rem;
+  color: white;
+  background-color: var(--background-secondary);
 }
 
 .large-button:hover {
   transform: rotate(5deg)
 }
-
 
 h1 {
   font-size: clamp(2rem, 4vw, 5rem);
