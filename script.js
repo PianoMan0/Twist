@@ -7,12 +7,12 @@ button.addEventListener('click', () => {
     button.textContent = 'Pause';
   } else {
     audio.pause();
-    button.textContent = 'Play';
+    button.textContent = 'Play music!';
   }
 });
 
 audio.onerror = function() {
   console.error("Audio file failed to load.");
   button.disabled = true;
-  button.textContent = "Audio Error";
+  button.textContent = "Audio error";
 };
