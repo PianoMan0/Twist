@@ -2,24 +2,61 @@
   <head>
     <title>✨TWIST✨</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
-    <a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
-    <div id="audio-toggle">
-      <audio id="themeMusic" loop src="tttwist(1).mp3"></audio>
-      <button id="audioButton">Play music!</button>
-    </div>
-    <div style="margin-top: 210px;"><center><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e25db14d456b63bf34454edfc8ec722551ad1770_image.png" alt="'TWIST' wordmark"></img></center></div>
+    <header class="top-bar">
+      <div class="hack-club-banner">
+        <a href="https://hackclub.com/">
+          <img 
+            src="https://assets.hackclub.com/flag-orpheus-top.svg" 
+            alt="An illustration of a hand waving a Hack Club flag"
+          />
+        </a>
+      </div>
+
+      <div id="audio-toggle">
+        <audio id="themeMusic" loop src="tttwist(1).mp3"></audio>
+        <button id="audioButton">Play music!</button>
+      </div>
+    </header>
     
-    <section class="hero">
-      <h1>Twist</h1>
-      <p>Make your own programming language, get $40 to buy electronics!</p>
-    </section>
-<center>
-<a href="about.html"><button class="start">Get Started</button></a></center>
+    <div class="frame-background" inert>
+      <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/491756a4cad19cf7d725292411ca55ffdd15593a_twist___1___1_.png" />
+    </div>
+    <main>
+      <section class="hero" id="hero">
+        <img 
+          src="https:/hc-cdn.hel1.your-objectstorage.com/s/v3/e25db14d456b63bf34454edfc8ec722551ad1770_image.png" 
+          alt="TWIST"
+        >
+        <h1>Make a fun programming language and get $40 to buy electronics!</h1>
+        <a href="#about"><button class="start">Get Started</button></a>
+      </section>
 
+      <section id="about">
+        <h2>What is this?</h2>
+        <p>
+          This is a <a href="https://ysws.hackclub.com">YSWS</a> that is not about
+          building a productive programming language, but about building a programming
+          language that is fun and creative - an <i>esolang!</i>
+        </p>
+      </section>
 
+      <section id="requirements">
+        <h2>What are the requirements?</h2>
+        <p>
+          You can have a lot of fun designing your language however you want, but we
+          do have some requirements to make sure it works! It should feature:
+        </p>
+        <ul>
+          <li><a href="variables.html" class="ysws">Variables</a></li>
+          <li><a href="operators.html" class="ysws">Operators</a></li>
+          <li><a href="functions.html" class="ysws">Functions</a></li>
+          <li><a href="error_handling.html" class="ysws">Error Handling</a></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
